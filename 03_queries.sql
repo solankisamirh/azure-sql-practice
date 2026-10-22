@@ -7,7 +7,7 @@ AS
 BEGIN
     SELECT Name, ApertureMm
     FROM Telescopes
-    --WHERE IsAvailable = 1
+    WHERE IsAvailable = 1
     ORDER BY ApertureMm DESC; 
 END;
 GO 
