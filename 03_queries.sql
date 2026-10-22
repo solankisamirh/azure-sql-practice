@@ -1,8 +1,9 @@
 -- 3. Read them back
 SELECT * FROM Telescopes; 
 
+GO
 -- 4. Write stored procedure 
-CREATE PROCEDURE GetAvailableTelescopes
+CREATE OR ALTER PROCEDURE GetAvailableTelescopes
 AS
 BEGIN
     SELECT Name, ApertureMm
@@ -12,4 +13,4 @@ BEGIN
 END;
 GO 
 
-EXEC GetAvailableTelescopes; 
+EXEC GetAvailableTelescopes;
